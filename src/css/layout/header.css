@@ -1,0 +1,181 @@
+/******Header Area******/
+
+header {
+    min-height: 70vh;
+    background: url("../../assets/img/movie_Cover.jpg") no-repeat fixed center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 20px 100px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .header_top_right {
+    display: flex;
+    align-items: center;
+  }
+  
+  header i {
+    cursor: pointer;
+  }
+  
+  header .logo p {
+    font-size: 2rem;
+  }
+  
+  header .logo a {
+    color: white;
+  }
+  
+  header .logIn_btn {
+    background: none;
+  }
+  
+  .search {
+    position: relative;
+    color: var(--text-color-light);
+    font-size: 1rem;
+  }
+  
+  .search input {
+    font-weight: 300;
+    width: 250px;
+    height: 32px;
+    border: 1px solid var(--text-color-light);
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+    background: none;
+    overflow: visible;
+  }
+  
+  .search input::placeholder {
+    color: var(--text-color-light);
+    font-size: 1.1rem;
+    font-weight: 300;
+  }
+  
+  .search i {
+    position: absolute;
+    top: 6px;
+    right: 10px;
+  }
+  
+  .bg {
+    background-color: var(--primary-color);
+    box-shadow: 0 0 15px var(--text-color);
+  }
+  
+  /******Hero Area******/
+  
+  .featured_movies {
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+    padding: 50px 100px;
+  }
+  
+  .featured_movies > * {
+    z-index: 1;
+    position: relative;
+  }
+  
+  .featured_movies::after {
+    content: "";
+    background-color: var(--background-color-dark-transparent);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  .movie_details h1 {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 3rem;
+    letter-spacing: 5px;
+  }
+  
+  .movie_cat {
+    margin: 2rem 0;
+    display: flex;
+  }
+  
+  .movie_cat p {
+    padding-left: 20px;
+    font-weight: 300;
+    color: var(--text-color-light);
+  }
+  
+  .movie_cat p:first-child {
+    padding-left: 0px;
+  }
+  
+  #hero_area.movie_rating {
+    width: 200px;
+  }
+  
+  .movie_rating p {
+    color: white;
+    font-size: 0.8rem;
+  }
+  
+  .movie_rating p span {
+    font-size: 0.6rem;
+    padding-left: 10px;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 300;
+  }
+  
+  .rating_star {
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .star_icon {
+    display: flex;
+    color: var(--primary-color-light);
+  }
+  
+  .rating_value {
+    border: 1px solid var(--text-color-light);
+    border-radius: 1px;
+  }
+  
+  .rating_value p {
+    font-size: 0.7rem;
+    padding: 3px;
+  }
+  
+  .movie_btn .movie_info {
+    border: 1px solid white;
+    background: none;
+    margin-left: 10px;
+  }
+  
+  .movie_btn .wishlist {
+    background: none;
+    padding: 1rem;
+  }
+
+  @media (max-width: 599px) {
+    .movie_details h1{
+          
+      }
+  }

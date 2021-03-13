@@ -1,0 +1,172 @@
+/******Global Element******/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(242, 242, 242);
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+h1,
+h3 {
+  color: var(--text-color);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+p {
+  color: var(--text-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+button {
+  background-color: var(--primary-color);
+  text-transform: uppercase;
+  color: #fff;
+  border-style: none;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+.button {
+  background-color: var(--primary-color);
+  text-transform: uppercase;
+  color: #fff;
+  border-style: none;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+
+
+/******Main Area******/
+
+.main_top_area {
+  display: flex;
+  justify-content: space-between;
+}
+
+#movie_list nav ul {
+  display: flex;
+}
+
+#movie_list nav ul li {
+  list-style-type: none;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+#movie_list nav ul li:first-child {
+  padding-left: 0;
+}
+
+.selected_tab {
+  color: var(--primary-color);
+}
+
+.movie_list_icon {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+#movie_list nav ul li:hover,
+.movie_list_icon i:hover {
+  color: var(--primary-color);
+}
+
+.movie_list_icon .icon-menu {
+  font-size: 1.5rem;
+}
+
+.separator {
+  width: 100%;
+  height: 1px;
+  background-color: var(--text-color-light);
+  margin-top: 30px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.cards .card {
+  width: 30%;
+  margin-bottom: 50px;
+  background-color: rgb(253, 253, 253);
+  border-radius: 5px;
+  box-shadow: 0 0 1px rgb(207 207 207);
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.card .thumb_area img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+.card .thumb_area .thumb_year {
+  position: relative;
+}
+
+.card .movie_info {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.movie_heading_info {
+  padding-bottom: 20px;
+}
+
+.movie_body_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.movie_body_text p {
+  font-size: 0.8rem;
+  padding-top: 5px;
+  color: var(--text-color-medium);
+}
+
+.card .movie_rating p {
+  color: var(--text-color);
+  padding: 5px;
+  font-size: 0.8rem;
+  border: 1px solid var(--primary-color-light);
+}
