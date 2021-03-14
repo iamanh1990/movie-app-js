@@ -15,3 +15,8 @@
 
 /* external styles */
 @import './vendors/vendor.css';
+
+/* Imported Global style */
+@import './style.css';
+
+/* Responsive */

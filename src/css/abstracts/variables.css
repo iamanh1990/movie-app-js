@@ -1,3 +1,13 @@
 :root {
-  --color-primary: orangered;
+  --primary-color: #dc0b17;
+  --primary-color-light: #f96063;
+  --primary-color-dark: #7b0102;
+
+  --background-color-light: rgb(250, 250, 250);
+  --background-color-dark: #93010b;
+  --background-color-dark-transparent: rgba(0, 0, 0, 0.6);
+
+  --text-color: #302f2e;
+  --text-color-medium: #969494;
+  --text-color-light: #e8e8e8;
 }
