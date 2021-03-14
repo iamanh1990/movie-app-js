@@ -1,9 +1,6 @@
 import "../css/main.css"
-import testFunc from "./test/khan"
 
-testFunc();
-
-let header = document.querySelector('.header-top');
+let header = document.querySelector('.header__nav');
 
 // onScroll effect for Header Top
 

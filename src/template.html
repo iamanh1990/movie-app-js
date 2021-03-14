@@ -1,64 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <header>
-    <div class="header-top">
-      <div class="logo">
-        <p><a href="./index.html">TMB</a></p>
-      </div>
-      <div class="header_top_right">
-        <div class="search">
-          <input type="text" placeholder="search" />
-          <i class="icon-search"></i>
-        </div>
-        <div class="link">
-          <a href="#" class="logIn_btn button">LogIn</a>
-          <a href="#" class="signUp_btn button">SignUp</a>
-        </div>
-      </div>
-    </div>
-    <section id="hero_area">
-      <div class="featured_movies">
-        <div class="movie_details">
-          <h1>The Persuits of Happiness</h1>
-          <div class="movie_cat">
-            <p>Fantasy</p>
-            <p>Animation</p>
-            <p>Family</p>
-            <p>Duration: 1h 52m</p>
-          </div>
-          <div class="movie_btn">
-              <a href="#" class="button watch_movie">Watch Movie</a>
-              <a href="#" class="button movie_info">Movie Info</a>
-              <a href="#" class="button wishlist">+ Add To Wishlist</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TMB</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__nav">
+        <div class="header__nav__left">
+          <div class="header__nav__left--logo">
+            <a href="./index.html">TMB</a>
           </div>
         </div>
-        <div class="movie_rating">
-          <p>Rating <span>based on 3.54 reviews</span></p>
-          <div class="rating_star">
-            <div class="star_icon">
-              <div class="star">
-                <i class="icon-star"></i>
+        <div class="header__nav__right">
+          <div class="header__nav__right--search">
+            <input type="text" placeholder="Search Movie" />
+            <i class="fas fa-search"></i>
+          </div>
+          <div class="header__nav__right--btn">
+            <a href="#" class="header__nav__right--btn--logIn button">LogIn</a>
+            <a href="#" class="header__nav__right--btn--signUp button"
+              >SignUp</a
+            >
+          </div>
+        </div>
+      </div>
+      <section id="header__hero">
+        <div class="header__hero--featured">
+          <div class="header__hero--featured__movie">
+            <h1>The Persuits of Happiness</h1>
+            <div class="header__hero--featured__movie__cat">
+              <p>Fantasy</p>
+              <p>Animation</p>
+              <p>Family</p>
+              <p>Duration: 1h 52m</p>
+            </div>
+            <div class="header__hero--featured--btn">
+              <a href="#" class="header__hero--featured--btn__watch button"
+                >Watch Trailer</a
+              >
+              <a href="#" class="header__hero--featured--btn__info button"
+                >Movie Info</a
+              >
+              <a href="#" class="header__hero--featured--btn__wish button"
+                >+ Add To Wishlist</a
+              >
+            </div>
+          </div>
+          <div class="header__hero--featured--rating">
+            <p>Rating <span>based on 3.54 reviews</span></p>
+            <div class="header__hero--featured--rating__val">
+              <div class="header__hero--featured--rating__icons">
+                <i class="far fa-star"></i>
+
+                <i class="far fa-star"></i>
+
+                <i class="far fa-star"></i>
+
+                <i class="fas fa-star-half-alt"></i>
+
+                <i class="fas fa-star-half-alt"></i>
               </div>
-              <div class="star"><i class="icon-star"></i></div>
-              <div class="star"><i class="icon-star"></i></div>
-              <div class="star"><i class="icon-star-half-alt"></i></div>
-              <div class="star"><i class="icon-star-empty"></i></div>
-            </div>
-            <div class="rating_value">
-              <p>3.4</p>
+              <div class="header__hero--featured--rating__score">
+                <p>3.4</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </header>
-  
-</body>
+      </section>
+    </header>
+    <main>
+      <section id="main__nav">
+        <div class="main__container">
+          <div class="main__nav--movie__lists">
+            <nav>
+              <ul>
+                <li class="main__nav--selected">Trending</li>
+                <li>Top Rated</li>
+                <li>New Arrivals</li>
+                <li>
+                  Genre
+                  <i class="fas fa-chevron-down"></i>
+                </li>
+              </ul>
+            </nav>
+            <div class="main__nav--card__view__icon">
+              <i class="fas fa-th main__nav--selected"></i>
+              <i class="fas fa-bars"></i>
+            </div>
+          </div>
+          <div class="main__nav--separator"></div>
+        </div>
+      </section>
+
+      <section id="main--movie__thumbs">
+        <div class="main__container">
+          <div class="main--movie__cards">
+            <div class="main--movie__card">
+              <div class="main--movie--card__img">
+                <img
+                  src="./assets/img/movie_poster.jpg"
+                  alt="Movie Poster Image"
+                />
+              </div>
+              <div class="main--movie--card__info">
+                <div class="main--movie--card__heading">
+                  <h3>The Persuits of Happiness</h3>
+                </div>
+                <div class="main--movie--card__subheading">
+                  <div class="main--movie--card__tag">
+                    <p>2017</p>
+                    <p>Action, Adventure, Fantasy</p>
+                  </div>
+                  <div class="main--movie--card__rating">
+                    <p>4.17</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="main--movie__card">
+              <div class="main--movie--card__img">
+                <img
+                  src="./assets/img/movie_poster.jpg"
+                  alt="Movie Poster Image"
+                />
+              </div>
+              <div class="main--movie--card__info">
+                <div class="main--movie--card__heading">
+                  <h3>The Persuits of Happiness</h3>
+                </div>
+                <div class="main--movie--card__subheading">
+                  <div class="main--movie--card__tag">
+                    <p>2017</p>
+                    <p>Action, Adventure, Fantasy</p>
+                  </div>
+                  <div class="main--movie--card__rating">
+                    <p>4.17</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="main--movie__card">
+              <div class="main--movie--card__img">
+                <img
+                  src="./assets/img/movie_poster.jpg"
+                  alt="Movie Poster Image"
+                />
+              </div>
+              <div class="main--movie--card__info">
+                <div class="main--movie--card__heading">
+                  <h3>The Persuits of Happiness</h3>
+                </div>
+                <div class="main--movie--card__subheading">
+                  <div class="main--movie--card__tag">
+                    <p>2017</p>
+                    <p>Action, Adventure, Fantasy</p>
+                  </div>
+                  <div class="main--movie--card__rating">
+                    <p>4.17</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="main--movie__card">
+              <div class="main--movie--card__img">
+                <img
+                  src="./assets/img/movie_poster.jpg"
+                  alt="Movie Poster Image"
+                />
+              </div>
+              <div class="main--movie--card__info">
+                <div class="main--movie--card__heading">
+                  <h3>The Persuits of Happiness</h3>
+                </div>
+                <div class="main--movie--card__subheading">
+                  <div class="main--movie--card__tag">
+                    <p>2017</p>
+                    <p>Action, Adventure, Fantasy</p>
+                  </div>
+                  <div class="main--movie--card__rating">
+                    <p>4.17</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="main--movie__card">
+              <div class="main--movie--card__img">
+                <img
+                  src="./assets/img/movie_poster.jpg"
+                  alt="Movie Poster Image"
+                />
+              </div>
+              <div class="main--movie--card__info">
+                <div class="main--movie--card__heading">
+                  <h3>The Persuits of Happiness</h3>
+                </div>
+                <div class="main--movie--card__subheading">
+                  <div class="main--movie--card__tag">
+                    <p>2017</p>
+                    <p>Action, Adventure, Fantasy</p>
+                  </div>
+                  <div class="main--movie--card__rating">
+                    <p>4.17</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="main--movie__card">
+              <div class="main--movie--card__img">
+                <img
+                  src="./assets/img/movie_poster.jpg"
+                  alt="Movie Poster Image"
+                />
+              </div>
+              <div class="main--movie--card__info">
+                <div class="main--movie--card__heading">
+                  <h3>The Persuits of Happiness</h3>
+                </div>
+                <div class="main--movie--card__subheading">
+                  <div class="main--movie--card__tag">
+                    <p>2017</p>
+                    <p>Action, Adventure, Fantasy</p>
+                  </div>
+                  <div class="main--movie--card__rating">
+                    <p>4.17</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
