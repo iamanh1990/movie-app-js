@@ -46,7 +46,7 @@
 }
 
 .fa-star.active {
-  color: var(--color-secondary);
+  color: var(--color-yellow);
 }
 
 .header__movie__rating {
