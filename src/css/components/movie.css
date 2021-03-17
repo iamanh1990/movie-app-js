@@ -7,6 +7,8 @@
   justify-content: space-between;
   -webkit-transition: all ease-out 1s;
   transition: all ease-out 1s;
+  background-color: var(--color-black);
+  color: var(--color-white);
 }
 
 .movie:hover {
