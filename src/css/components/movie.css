@@ -35,19 +35,6 @@
   width: 80%;
 }
 
-.movie__rating {
-  position: absolute;
-  top: var(--gutter-vertical);
-  right: var(--gutter-horizontal);
-  width: 4rem;
-  height: 4rem;
-  border-radius: 50%;
-  border: solid 3px var(--color-yellow);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .movie__rating__stars {
   position: absolute;
   bottom: var(--gutter-vertical);
