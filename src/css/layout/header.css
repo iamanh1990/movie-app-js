@@ -39,7 +39,10 @@
 .header__movie-cta {
 }
 
-.header__movie__rating--box {
+.bg {
+  background-color: red !important;
+  box-shadow: 0 0 15px var(--color-black);
+  transition: background-color 200ms linear;
 }
 
 .stars--box {
